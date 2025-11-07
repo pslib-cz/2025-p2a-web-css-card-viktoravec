@@ -29,6 +29,71 @@
 }
 
 @layer components {
-    /* todo components */
- 
+.card--marketer {
+    border: 2px solid var(--border);
+    border-radius: 1.5rem;
 }
+    .figure__name {
+        color: var(--secondary);
+        font-weight: bolder;
+        font-size: 2em;
+    }
+    .figure__name__important {
+        color: var(--primary);
+        font-weight: 800;
+    }
+
+    .figure__main__monthly {
+        margin-bottom: 0;
+    }
+
+    .figure__main__price {
+        font-weight: 750;
+        font-size: 2em;
+        color: var(--primary);
+    }
+
+    .figure__main__smaller {
+        font-size: 0.8em;
+        margin-top: 0.5rem;
+    }
+
+    .figure__main__smaller__info {
+        color: var(--primary);
+        font-weight: 700;
+    }
+
+    .button {
+        display: block;
+        text-align: center;
+        padding: 1em 2em;
+        border-radius: 0.5rem;
+        display: block;
+        padding: 1em 2em;
+        border-radius: 0.5rem;
+    }
+
+    .button--green {
+        text-decoration: none;
+        color: white;
+        background-color: var(--primary);
+    }
+
+    .figure__list {
+        line-height: 2.25rem;
+        padding-left: 25px;
+    }
+
+    .figure__list__check {
+        list-style-image: url(../images/check.svg);
+        padding-left: 0.5rem;
+    }
+
+    .figure__list__cross {
+        list-style-image: url(../images/cross.svg);
+        padding-left: 0.5rem;
+    }
+};
+
+
+
