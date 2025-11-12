@@ -10,6 +10,7 @@
         --denied: #ff8686;
         --text: #515959;
         --border: #59de0c;
+        --border-premium: #f3de22;
     }
     .main {
         display: flow-root;
@@ -25,40 +26,40 @@
         max-width: 21em;
         margin: 1rem; /* without scaling */
         padding: 1em;
+        border-radius: 1.5rem;
     }
 }
 
 @layer components {
 .card--marketer {
     border: 2px solid var(--border);
-    border-radius: 1.5rem;
 }
-    .figure__name {
+    .card--marketer .figure__name {
         color: var(--secondary);
         font-weight: bolder;
         font-size: 2em;
     }
-    .figure__name__important {
+    .card--marketer .figure__important {
         color: var(--primary);
         font-weight: 800;
     }
 
-    .figure__main__monthly {
+    .card--marketer .figure__main__monthly {
         margin-bottom: 0;
     }
 
-    .figure__main__price {
+    .card--marketer .figure__main__price {
         font-weight: 750;
         font-size: 2em;
         color: var(--primary);
     }
 
-    .figure__main__smaller {
+    .card--marketer .figure__main__smaller {
         font-size: 0.8em;
         margin-top: 0.5rem;
     }
 
-    .figure__main__smaller__info {
+    .card--marketer .figure__main__smaller__info {
         color: var(--primary);
         font-weight: 700;
     }
@@ -68,30 +69,112 @@
         text-align: center;
         padding: 1em 2em;
         border-radius: 0.5rem;
-        display: block;
         padding: 1em 2em;
         border-radius: 0.5rem;
     }
 
-    .button--green {
+    .card--marketer .button--more{
         text-decoration: none;
         color: white;
         background-color: var(--primary);
     }
+        .card--marketer .button--more:hover{
+        background-color: rgb(47, 133, 114);
+    }
 
-    .figure__list {
+    .card--marketer .figure__list {
         line-height: 2.25rem;
         padding-left: 25px;
     }
 
-    .figure__list__check {
+    .card--marketer .figure__list__check {
         list-style-image: url(../images/check.svg);
         padding-left: 0.5rem;
     }
 
-    .figure__list__cross {
+    .card--marketer .figure__list__cross {
         list-style-image: url(../images/cross.svg);
         padding-left: 0.5rem;
+    }
+
+.card--premium {
+    border: 2px solid #d3d3d3;
+    padding: 0;
+    overflow: hidden;
+    max-width: 23em;
+}
+
+    .card--premium .figure__header {
+        border-top: 5px solid var(--border-premium);
+        background: linear-gradient(135deg, #3477c4, #9d4bbd);
+        align-items: center;
+        padding-bottom: 1.5rem;
+    }
+
+    .card--premium .figure__name {
+        color: #ffff;
+        text-align: center;
+        font-size: 2.5em;
+        letter-spacing: 0.1em;
+        font-weight: 750;
+        margin-bottom: 0;
+    }
+
+    .card--premium .figure__info {
+        color: #ffff;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
+    .card--premium .figure__main__smaller {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 1rem 3rem;
+        padding: 0.65em 0.5em;
+        color: #ffff;
+        text-decoration: none;
+        text-align: center;
+        background: #bcbebe73;
+        border-radius: 50rem
+    }
+        .card--premium .figure__main__smaller:hover {
+            background-color: #f1f1f14f
+    }
+
+    .card--premium .figure__main {
+        padding: 1rem 2rem;
+        padding-bottom: 2rem;
+    }
+
+        .card--premium .figure__params--top {
+        color: #000000;
+        font-size: 1.10rem;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #c9c9c9be
+    }
+        .card--premium .figure__params--bottom {
+        color: #000000;
+        font-size: 1.10rem;
+    }
+
+    .card--premium .figure__footer {
+        padding: 0rem 2rem;
+        padding-bottom: 6rem;
+    }
+    .card--premium .button--more {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #ffff;
+        text-decoration: none;
+        text-align: center;
+        background: linear-gradient(135deg, #3477c4, #9d4bbd);
+        border-radius: 1rem ;
+        padding: 1em;
+    }
+        .card--premium .button--more:hover {
+        background: linear-gradient(135deg, #5486be, #9664aa);
     }
 };
 
