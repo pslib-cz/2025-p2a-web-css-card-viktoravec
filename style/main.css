@@ -11,6 +11,7 @@
         --text: #515959;
         --border: #59de0c;
         --border-premium: #f3de22;
+        --business: #13ad72;
     }
     .main {
         display: flow-root;
@@ -117,6 +118,7 @@
         font-size: 2.5em;
         letter-spacing: 0.1em;
         font-weight: 750;
+        margin-top: 3.5rem;
         margin-bottom: 0;
     }
 
@@ -131,7 +133,7 @@
     .card--premium .figure__main__smaller {
         font-size: 1.5rem;
         font-weight: 600;
-        margin: 1rem 3rem;
+        margin: 1.25rem 3rem;
         padding: 0.65em 0.5em;
         color: #ffff;
         text-decoration: none;
@@ -144,15 +146,14 @@
     }
 
     .card--premium .figure__main {
-        padding: 1rem 2rem;
-        padding-bottom: 2rem;
+        padding: 2rem;
     }
 
         .card--premium .figure__params--top {
         color: #000000;
-        font-size: 1.10rem;
+        font-size: 1rem;
         padding-bottom: 1em;
-        border-bottom: 1px solid #c9c9c9be
+        border-bottom: 1px solid #bbbbbbbe
     }
         .card--premium .figure__params--bottom {
         color: #000000;
@@ -161,7 +162,7 @@
 
     .card--premium .figure__footer {
         padding: 0rem 2rem;
-        padding-bottom: 6rem;
+        padding-bottom: 7rem;
     }
     .card--premium .button--more {
         font-size: 1.25rem;
@@ -171,12 +172,88 @@
         text-align: center;
         background: linear-gradient(135deg, #3477c4, #9d4bbd);
         border-radius: 1rem ;
-        padding: 1em;
+        padding: 0.8em 1em;
     }
         .card--premium .button--more:hover {
         background: linear-gradient(135deg, #5486be, #9664aa);
     }
+
+    .card--business {
+        border: 3px solid var(--business);
+        padding: 0;
+        overflow: hidden;
+        max-width: 23em;
+    }
+
+    .card--business .figure__name {
+        color: var(--business);
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: 750;
+        margin-top: 4rem;
+        margin-bottom: 0;
+    }
+
+    .card--business .figure__info {
+        color: var(--text);
+        text-align: center;
+        font-size: 1.15rem;
+        font-weight: 350;
+        margin-bottom: 0;
+        
+    }
+
+    .card--business .figure__main {
+        margin-top: 2.5rem;
+        background: linear-gradient(135deg, #4ee7ad, #12a36c);
+        border-top: 3px solid var(--business)
+    }
+
+    .card--business .figure__main__price {
+        text-align: center;
+        font-size: 3rem;
+        letter-spacing: 0.1em;
+        font-weight: 800;
+        color: #ffff;
+        margin-top: 3rem;
+        margin-bottom: 0;
+    }
+
+    .card--business .fiigure__main__monthly {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #ffffff;
+        margin: 0;
+        margin-top: 0.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .card--business .figure__footer {
+        padding-bottom: 8rem;
+    }
+
+    .card--business .figure__footer__info {
+        text-align: center;
+        margin-top: 2.5rem;
+        font-style: italic;
+        font-weight: 350;
+        margin-bottom: 0;
+    }
+
+    .card--business .button--more {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #ffff;
+        text-decoration: none;
+        text-align: center;
+        background: linear-gradient(135deg, #4ee7ad, #12a36c);
+        border-radius: 50rem;
+        margin: 2.5rem;
+        margin-top: 1.75rem;
+        padding: 0.75em;
+    }
+    .card--business .button--more:hover {
+        background: linear-gradient(135deg, #6cc9a5, #40a17c);
+    }
 };
-
-
-
