@@ -12,6 +12,7 @@
         --border: #59de0c;
         --border-premium: #f3de22;
         --business: #13ad72;
+        --zero: #11c589;
     }
     .main {
         display: flow-root;
@@ -24,10 +25,12 @@
         color: var(--text);
     }
     .card {
-        max-width: 21em;
+        min-width: 21rem;
         margin: 1rem; /* without scaling */
         padding: 1em;
         border-radius: 1.5rem;
+        display: inline-block;
+        vertical-align: top;
     }
 }
 
@@ -35,11 +38,13 @@
 .card--marketer {
     border: 2px solid var(--border);
 }
+
     .card--marketer .figure__name {
         color: var(--secondary);
         font-weight: bolder;
         font-size: 2em;
     }
+
     .card--marketer .figure__important {
         color: var(--primary);
         font-weight: 800;
@@ -86,6 +91,7 @@
     .card--marketer .figure__list {
         line-height: 2.25rem;
         padding-left: 25px;
+        margin-bottom: 8rem;
     }
 
     .card--marketer .figure__list__check {
@@ -102,7 +108,8 @@
     border: 2px solid #d3d3d3;
     padding: 0;
     overflow: hidden;
-    max-width: 23em;
+    min-width: 23rem;
+
 }
 
     .card--premium .figure__header {
@@ -149,21 +156,22 @@
         padding: 2rem;
     }
 
-        .card--premium .figure__params--top {
-        color: #000000;
-        font-size: 1rem;
-        padding-bottom: 1em;
-        border-bottom: 1px solid #bbbbbbbe
+    .card--premium .figure__params--top {
+    color: #000000;
+    font-size: 1rem;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #bbbbbbbe
     }
-        .card--premium .figure__params--bottom {
-        color: #000000;
-        font-size: 1.10rem;
+    .card--premium .figure__params--bottom {
+    color: #000000;
+    font-size: 1.10rem;
     }
 
     .card--premium .figure__footer {
         padding: 0rem 2rem;
-        padding-bottom: 7rem;
+        margin-bottom: 7rem;
     }
+
     .card--premium .button--more {
         font-size: 1.25rem;
         font-weight: 600;
@@ -174,16 +182,17 @@
         border-radius: 1rem ;
         padding: 0.8em 1em;
     }
-        .card--premium .button--more:hover {
-        background: linear-gradient(135deg, #5486be, #9664aa);
+
+    .card--premium .button--more:hover {
+    background: linear-gradient(135deg, #5486be, #9664aa);
     }
 
-    .card--business {
-        border: 3px solid var(--business);
-        padding: 0;
-        overflow: hidden;
-        max-width: 23em;
-    }
+.card--business {
+    border: 3px solid var(--business);
+    padding: 0;
+    overflow: hidden;
+    min-width: 23rem;
+}
 
     .card--business .figure__name {
         color: var(--business);
@@ -230,7 +239,7 @@
     }
 
     .card--business .figure__footer {
-        padding-bottom: 8rem;
+        margin-bottom: 12rem;
     }
 
     .card--business .figure__footer__info {
@@ -256,4 +265,165 @@
     .card--business .button--more:hover {
         background: linear-gradient(135deg, #6cc9a5, #40a17c);
     }
+
+.card--zero {
+    margin: 1em;
+    padding: 0;
+    background: linear-gradient(45deg, #303035, #181b27);
+    max-width: 23.15rem;
+}
+    .card--zero .figure__header {
+        text-align: center;
+        margin-top: 2.5rem;
+        padding-bottom: 3rem;
+        border-bottom: 3px solid #585858;
+    }
+
+    .card--zero .figure__name {
+        font-size: 2.25rem;
+        font-weight: 250;
+        color:#a3a3a3;
+        margin: 0;
+    }
+
+    .card--zero .figure__info {
+        font-size: 1rem;
+        font-weight: 350;
+        color:#757575;
+        padding-top: 1em;
+        margin: 0;
+    }
+    .card--zero .figure__main {
+        padding: 2rem
+    }
+    .card--zero .figure__main__price {
+        margin-top: 2rem;
+        margin-bottom: 6rem;
+        color: var(--zero);
+        font-size: 4.5rem;
+        font-weight: 250;
+        letter-spacing: 0.1;
+        text-align: center;
+         text-shadow: 0 0 25px rgba(0, 255, 150, 0.8);
+    }
+        .card--zero .figure__main__price:hover {
+         text-shadow: 0 0 50px rgba(0, 255, 150, 1);
+    }
+
+    .card--zero .figure__params {
+        color: #e2e2e2;
+        line-height: 1.5;
+    }
+
+    .card-zero .figure__footer {
+        padding-bottom: 2rem;
+    }
+
+    .card--zero .button--more {
+        margin: 0 2rem 2rem;
+        padding: 1em 4em;
+        border: 3px solid var(--zero);
+        text-decoration: none;
+        color: var(--zero);
+        font-weight: 750;
+    }
+        .card--zero .button--more:hover {
+        text-shadow: 0 0 25px rgba(0, 255, 150, 0.8);
+        box-shadow: 0 0 15px rgba(0, 255, 150, 0.4);
+    }
+
+.card--profi {
+    overflow: hidden;
+    margin: 1em;
+    padding: 0rem;
+    border: 2px solid #d3d3d3;
+    width: 23.15rem;
+}
+    .card--profi .figure__header {
+        background-color: #fdf4ea;
+        text-align: center;
+        padding-bottom: 3.5rem;
+    }
+
+    .card--profi .figure__name {
+        display: inline-block;
+        margin: 0;
+        margin-top: 3rem;
+        padding: 0.75rem 1rem;
+        border-radius: 50rem;
+        color: #c2410c;
+        background-color: #fed7aa;
+        font-weight: 600;
+        font-size: 0.85rem;
+        letter-spacing: 0.05rem;
+    }
+    
+    .card--profi .figure__info {
+        margin: 0;
+        margin-top: 0.85rem;
+        padding: 0.75rem 1rem;
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: #1f1f1f;
+    }
+
+    .card--profi .figure__price {
+        display: inline-block;
+        margin: 0;
+        margin-top: 1rem;
+        padding: 1.75rem 3rem;
+        border-radius: 1rem;
+        color: #ffffff;
+        background-color: #f46a13;
+        font-weight: 700;
+        font-size: 2rem;
+        letter-spacing: 0.05rem;
+    }
+    .card--profi .figure__price:hover {
+    background-color: #d66016;
+    }
+
+    .card--profi .figure__list__check {
+        list-style-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M2 9 L6 13 L14 5" stroke="orange" stroke-width="2" fill="none"/></svg>');
+    }
+
+    .card--profi .figure__main {
+        padding: 1rem;
+    }
+
+    .card--profi .figure__list{
+        margin-top: 2rem;
+    }
+
+    .card--profi .figure__list__check {
+        line-height: 3rem;
+        color: #202020;
+        font-size: 1.15rem;
+    }
+
+    .card--profi .figure__footer {
+        text-align: center;
+        padding-top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .card--profi .button--more {
+        padding: 1rem 6rem;
+        color: #f56a13;
+        text-decoration: none;
+        font-weight: 750;
+        border: 3px solid #f66e14;
+        border-radius: 0.7rem;
+    }
+    .card--profi .button--more:hover {
+        background-color: #f0f0f0
+    }
 };
+
+
+
+
+
+
+
+
