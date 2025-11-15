@@ -169,7 +169,7 @@
 
     .card--premium .figure__footer {
         padding: 0rem 2rem;
-        margin-bottom: 7rem;
+        margin-bottom: 8rem;
     }
 
     .card--premium .button--more {
@@ -239,7 +239,7 @@
     }
 
     .card--business .figure__footer {
-        margin-bottom: 12rem;
+        padding-bottom: 10rem;
     }
 
     .card--business .figure__footer__info {
@@ -389,10 +389,12 @@
 
     .card--profi .figure__main {
         padding: 1rem;
+        text-align: center;
     }
 
     .card--profi .figure__list{
         margin-top: 2rem;
+        text-align: left;
     }
 
     .card--profi .figure__list__check {
@@ -418,6 +420,204 @@
     .card--profi .button--more:hover {
         background-color: #f0f0f0
     }
+
+.card--exe {
+    margin: 1em;
+    padding: 1rem;
+    background: linear-gradient(135deg, #8a5bf5, #8145f0);
+    position: relative;
+    width: 21.15rem;
+}
+.card--exe::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 37%;
+    width: 27%;
+    border-top: 6px solid #ffffff;
+    border-radius: 1rem;
+}
+
+    .card--exe .figure__header {
+        padding: 1rem
+    }
+
+    .card--exe .figure__name {
+        font-size: 3rem;
+        margin: 2rem 0rem 1rem 0rem;
+        text-align: center;
+        color: #ffff;
+        font-weight: 750;
+    }
+
+    .card--exe .figure__info {
+        font-size: 1rem;
+        margin: 1rem;
+        text-align: center;
+        color: #ffff;
+        font-weight: 400;        
+    }
+
+    .card--exe .figure__main {
+        margin-top: 1rem
+    }
+
+    .card--exe .figure__box {
+        background-color: #9370e6;
+        border-radius: 1rem;
+        padding: 4rem 0rem 1.5rem 0rem;
+        margin: 0rem 0.5rem 0rem;
+    }
+    .card--exe .figure__box:hover {
+    background-color: #9878e4;
+    }
+
+    .card--exe .figure__price {
+        font-size: 3.5rem;
+        font-weight: 800;
+        text-align: center;
+        color: #ffff;
+        margin: 0;
+    }
+
+    .card--exe .figure__main__smaller {
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+        color: #ebebeb;
+        margin-top: 1rem;   
+    }
+
+    .card--exe .figure__footer {
+        margin: 1rem;
+    }
+
+    .card--exe .figure__list{
+        list-style: none;
+        margin: 1.5 0 0 1.5rem;
+        padding-left: 1rem;
+    }
+
+    .card--exe .figure__list__check {
+        color: #ffff;
+        line-height: 3rem
+    }
+
+    .card--exe .button--more {
+        color: #8b5cf6;
+        background-color: #ffff;
+        padding: 1rem 3rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+        .card--exe .button--more:hover {
+        background-color: #dbdbdb;
+        color: #7b4de4;
+    }
+
+.card--enter {
+    margin: 1rem;
+    padding: 0;
+    border-radius: 1rem;
+    border-left: 7px solid #eb3d3d;
+    overflow: hidden;
+    width: 22.8rem;
+}
+
+    .card--enter .figure__header{
+        background-color: #fff2f2;
+        padding: 0 0 3rem 0;
+    }
+
+    .card--enter .figure__name {
+        margin: 0;
+        color: #ea3d3d;
+        font-size: 2.25rem;
+        font-weight: 750;
+        padding: 3rem 0 0 1.5rem;
+    }
+
+    .card--enter .figure__info {
+        margin: 1rem 0 0 1.5rem;
+        color: #4b4b4b;
+        font-size: 1rem;
+        font-weight: 400;   
+    }
+
+    .card--enter .figure__main {
+        padding: 1rem
+    }
+
+    .card--enter .figure__box {
+        background: linear-gradient(135deg, #e64343, #b40606);
+        border-radius: 1rem;
+        padding: 1rem 3rem;
+    }
+    .card--enter .figure__box:hover {
+        background: linear-gradient(135deg, #e25b5b, #e01717);
+        color: #e6e6e6;
+    }
+
+    .card--enter .figure__main__smaller {
+        color: #ffff;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .card--enter .figure__price {
+        color: #ffff;
+        font-size: 3rem;
+        font-weight: 750;
+        text-align: center;
+        margin: 0;
+        margin: 1.5rem 0 1rem 0;
+    }
+
+    .card--enter .figure__important {
+        text-align: center;
+        display: block;
+    }
+
+    .card--enter .figure__main__monthly {
+    display: inline-block;
+    padding: 1rem 2rem;
+    width: 25%;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    margin: 3rem 0.5rem 0rem 0.5rem;
+    color: #555555;
+    }
+    .card--enter .figure__main__monthly:hover {
+    background-color: #e9e9e9;
+    color: #3a3a3a;
+    }
+
+    .card--enter .figure__infinity {
+        font-size: 2rem;
+        color: #000000;
+    }
+
+    .card--enter .figure__footer {
+        padding-bottom: 8.5rem;
+    }
+
+    .card--enter .button--more {
+        padding: 1rem 3rem;
+        background: linear-gradient(135deg, #e64343, #b40606);
+        color: #ffff;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        margin: 1rem 1.5rem;
+    }
+    .card--enter .button--more:hover {
+    background: linear-gradient(135deg, #e25b5b, #e01717);
+    color: #e6e6e6;
+    }
+
 };
 
 
