@@ -618,6 +618,206 @@
     color: #e6e6e6;
     }
 
+.card--starter {
+    margin: 1rem;
+    padding: 0;
+    border: 2px solid #d3d3d3;
+    overflow: hidden;
+    width: 23rem;   
+}
+
+    .card--starter .figure__header {
+        margin-top: 1rem;
+        padding: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .card--starter .figure__lightning {
+        background-color: #10a798; 
+        padding: 1rem;
+        border-radius: 1rem;
+        font-size: 2.5rem;
+    }
+    .card--starter .figure__lightning:hover {
+    background-color: #108f82; 
+
+    }
+
+    .card--starter .figure__name {
+        font-size: 2.25rem;
+        font-weight: 750;
+        color: #000000;
+        margin: 0;
+        margin-top: 3rem;
+    }
+
+    .card--starter .figure__info {
+        line-height: 2rem;
+    }
+
+    .card--starter .figure__box {
+        margin-top: 1rem;
+        background: linear-gradient(135deg, #45beb2, #0d9688);
+        padding: 2rem 2rem;
+        overflow: hidden;
+        height: auto;
+    }
+
+    .card--starter .figure__main__smaller {
+        float: left;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #fff;
+        margin: 0;
+        line-height: 2rem;
+    }
+
+    .card--starter .figure__price {
+        float: right;
+        font-size: 2rem;
+        font-weight: 650;
+        color: #fff;
+        margin: 0;
+        line-height: 2rem;
+    }
+
+    .card--starter .figure__plan {
+       text-align: center;
+       font-size: 0;
+       margin: 1.5rem;
+       box-sizing: border-box;
+    }
+
+    .card--starter .figure__main__monthly {
+       display: inline-block;
+       font-size: 1rem;
+       margin: 0.5rem;
+       padding: 1rem;
+       background-color: #f0fdfa;
+       text-align: center;
+       width: calc(50% - 1rem);
+       border-radius: 0.5rem;
+       box-sizing: border-box;
+       vertical-align: middle;
+       white-space: nowrap;
+       overflow: hidden;
+       text-overflow: ellipsis;
+    }
+    .card--starter .figure__main__monthly:hover {
+       background-color: #d9eee9;
+    }
+
+    .card--starter .figure__footer {
+        padding-bottom: 3rem;
+    }
+
+    .card--starter .button--more {
+        border: 3px solid #10a798;
+        border-radius: 20rem;
+        margin: 2rem;
+        text-decoration: none;
+        color: #10a798;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        font-weight: 700;
+    }
+    .card--starter .button--more:hover {
+    background-color: #ebebeb
+    }
+
+.card--creative {
+    margin: 1rem;
+    padding: 0;
+    overflow: hidden;
+    width: 23rem;
+    background: linear-gradient(135deg, #fce6f3, #fbcfe8);
+}
+
+    .card--creative .figure__header {
+        margin: 3rem;
+        text-align: center;
+    }
+
+    .card--creative .figure__name {
+        color: #e92785;
+        font-size: 2.75rem;
+        font-weight: 800;
+        margin: 0;
+    }
+
+    .card--creative .figure__info {
+        color: #831843;
+        margin: 1.5rem 0 0 0;
+    }
+
+    .card--creative .figure__main {
+        margin: 2rem;
+        text-align: center;
+    }
+
+    .card--creative .figure__box {
+        background-color: #e92785;
+        border-radius: 50%;
+        display: inline-block;
+        width: 12rem;
+        height: 12rem;
+        position: relative;
+        text-align: center;
+        margin: 0;
+        box-shadow: 0px 5px 20px #aa1e56;
+    }
+    .card--creative .figure__box:hover {
+        background-color: #d61c76;
+        box-shadow: 0px 5px 50px #aa1e56;
+    }
+
+    .card--creative .figure__price,
+    .card--creative .figure__main__smaller {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        width: 90%;
+    }
+
+    .card--creative .figure__price {
+        top: 30%;
+        font-size: 2.75rem;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .card--creative .figure__main__smaller {
+        top: 60%;
+        font-size: 1rem;
+        font-weight: 350;
+        color: #fff;
+    }
+
+    .card--creative .figure__list {
+        list-style: none;
+        padding: 1rem 0 0 0;
+        text-align: center
+    }
+
+    .card--creative .figure__list__check {
+    line-height: 3.25em;
+    color: #831843;
+    }
+
+    .card--creative .button--more {
+        border-radius: 20rem;
+        margin: 2rem;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #e92785;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        font-weight: 700;
+    }
+    .card--creative .button--more:hover {
+        background-color: #ca1b70;
+    }
 };
 
 
